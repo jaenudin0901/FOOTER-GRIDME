@@ -1,0 +1,124 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      /* font-family: Arial, Helvetica, sans-serif; */
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    align-content: end;
+}
+footer{
+    /* padding: 20px 40px; */
+
+}
+.container{
+    left: 0;
+    right: 0;
+    display: grid;
+    padding: 0 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(168, 165, 159);
+}
+
+h3{
+    padding: 20px 0;
+
+}
+
+ul{
+
+}
+li{
+    list-style: none;
+       padding: 5px 0;
+}
+li a{
+    text-decoration: none;
+    color: black;
+ 
+}
+.sci {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sci li {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+}
+.sci li a i{
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+.app {
+
+    display:grid;
+    padding: 30px 0 0 0 ;
+   grid-template-columns: 1fr 1fr;
+}
+
+.app li{
+    display: block;
+    background-color: chocolate;
+    margin-left: 5px;
+    width: 100px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.copyright{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 40px;
+    background-color: rgb(63, 79, 110);
+    color: #fff;
+  
+}
+ .copyright h3{
+     /* text-align: center; */
+ }
+
+.copyright .iklan h3{
+    text-align: right;
+}
+@media(max-width:768px) {
+    .container {
+        left: 0;
+        right: 0;
+        display: grid;
+        padding: 0 20px;
+        grid-template-columns: 1fr;
+        background-color: rgb(168, 165, 159);
+    }
+    .app {
+
+        display: grid;
+        padding: 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .app li {
+        display: block;
+        background-color: chocolate;
+        margin-left: 5px;
+        width: 100px;
+        border-radius: 4px;
+        padding-left: 10px;
+    }
+    .copyright {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px 40px;
+        background-color: rgb(63, 79, 110);
+        color: #fff;
+
+    }
+.copyright .iklan h3 {
+    text-align: left;
+}
+}
